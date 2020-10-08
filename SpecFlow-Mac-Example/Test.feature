@@ -21,3 +21,9 @@ Scenario: Subtract two numbers
     And the second number is 6
     When the two numbers are subtracted
     Then the result should be 4
+
+Scenario: Subtract two other numbers
+    Given the first number is 50
+    And the second number is 70
+    When the two numbers are subtracted
+    Then the result should be -20
