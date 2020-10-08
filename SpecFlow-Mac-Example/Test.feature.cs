@@ -111,6 +111,26 @@ this.ScenarioInitialize(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Subtract two numbers")]
+        public virtual void SubtractTwoNumbers()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Subtract two numbers", null, ((string[])(null)));
+#line 19
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 20
+    testRunner.Given("the first number is 10", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 21
+    testRunner.And("the second number is 6", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 22
+    testRunner.When("the two numbers are subtracted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 23
+    testRunner.Then("the result should be 4", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

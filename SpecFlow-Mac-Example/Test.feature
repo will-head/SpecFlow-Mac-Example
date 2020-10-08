@@ -15,3 +15,9 @@ Scenario: Add two other numbers
     And the second number is 1
     When the two numbers are added
     Then the result should be 2
+
+Scenario: Subtract two numbers
+    Given the first number is 10
+    And the second number is 6
+    When the two numbers are subtracted
+    Then the result should be 4
