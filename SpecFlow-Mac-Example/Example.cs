@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SpecFlowMacExample
+namespace Example
 {
     public class Calculator
     {

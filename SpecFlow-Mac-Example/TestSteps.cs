@@ -1,4 +1,5 @@
 ﻿using System;
+using Example;
 
 using TechTalk.SpecFlow;
 
@@ -9,6 +10,8 @@ namespace SpecFlowMacExample
     {
 
         // For additional details on SpecFlow step definitions see https://go.specflow.org/doc-stepdef
+
+        private Calculator calculator = new Calculator();
 
         private readonly ScenarioContext _scenarioContext;
 
@@ -26,7 +29,7 @@ namespace SpecFlowMacExample
             // additional string/Table parameters can be defined on the step definition
             // method. 
 
-            _scenarioContext.Pending();
+            calculator.FirstNumber = number;
         }
 
         [Given("the second number is (.*)")]
