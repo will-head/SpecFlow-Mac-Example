@@ -16,7 +16,7 @@ namespace Example
         public int SecondNumber { get; set; }
         public int Add()
         {
-            return 120;
+            return FirstNumber + SecondNumber;
         }
     }
 }
