@@ -13,6 +13,7 @@ namespace SpecFlowMacExample
 
         private Calculator calculator = new Calculator();
 
+
         private readonly ScenarioContext _scenarioContext;
 
         public CalculatorStepDefinitions(ScenarioContext scenarioContext)
@@ -41,7 +42,7 @@ namespace SpecFlowMacExample
             // additional string/Table parameters can be defined on the step definition
             // method. 
 
-            _scenarioContext.Pending();
+            calculator.SecondNumber = number;
         }
 
         [When("the two numbers are added")]
