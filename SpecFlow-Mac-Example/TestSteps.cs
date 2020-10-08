@@ -5,37 +5,56 @@ using TechTalk.SpecFlow;
 namespace SpecFlowMacExample
 {
     [Binding]
-    public class TestSteps
+    public sealed class CalculatorStepDefinitions
     {
-        [Given("I have entered (.*) into the calculator")]
-        public void GivenIHaveEnteredSomethingIntoTheCalculator(int number)
+
+        // For additional details on SpecFlow step definitions see https://go.specflow.org/doc-stepdef
+
+        private readonly ScenarioContext _scenarioContext;
+
+        public CalculatorStepDefinitions(ScenarioContext scenarioContext)
         {
-            // TODO: implement arrange (recondition) logic
-            // For storing and retrieving scenario-specific data, 
-            // the instance fields of the class or the
-            //     ScenarioContext.Current
-            // collection can be used.
+            _scenarioContext = scenarioContext;
+        }
+
+        [Given("the first number is (.*)")]
+        public void GivenTheFirstNumberIs(int number)
+        {
+            //TODO: implement arrange (precondition) logic
+            // For storing and retrieving scenario-specific data see https://go.specflow.org/doc-sharingdata
             // To use the multiline text or the table argument of the scenario,
             // additional string/Table parameters can be defined on the step definition
             // method. 
 
-            ScenarioContext.Current.Pending();
+            _scenarioContext.Pending();
         }
 
-        [When("I press add")]
-        public void WhenIPressAdd()
+        [Given("the second number is (.*)")]
+        public void GivenTheSecondNumberIs(int number)
         {
-            // TODO: implement act (action) logic
+            //TODO: implement arrange (precondition) logic
+            // For storing and retrieving scenario-specific data see https://go.specflow.org/doc-sharingdata
+            // To use the multiline text or the table argument of the scenario,
+            // additional string/Table parameters can be defined on the step definition
+            // method. 
 
-            ScenarioContext.Current.Pending();
+            _scenarioContext.Pending();
         }
 
-        [Then("the result should be (.*) on the screen")]
+        [When("the two numbers are added")]
+        public void WhenTheTwoNumbersAreAdded()
+        {
+            //TODO: implement act (action) logic
+
+            _scenarioContext.Pending();
+        }
+
+        [Then("the result should be (.*)")]
         public void ThenTheResultShouldBe(int result)
         {
-            // TODO: implement assert (verification) logic
+            //TODO: implement assert (verification) logic
 
-            ScenarioContext.Current.Pending();
+            _scenarioContext.Pending();
         }
     }
 }
