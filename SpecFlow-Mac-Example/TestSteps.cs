@@ -12,6 +12,7 @@ namespace SpecFlowMacExample
         // For additional details on SpecFlow step definitions see https://go.specflow.org/doc-stepdef
 
         private Calculator calculator = new Calculator();
+        private int result;
 
 
         private readonly ScenarioContext _scenarioContext;
@@ -50,7 +51,7 @@ namespace SpecFlowMacExample
         {
             //TODO: implement act (action) logic
 
-            _scenarioContext.Pending();
+            result = calculator.Add();
         }
 
         [Then("the result should be (.*)")]
