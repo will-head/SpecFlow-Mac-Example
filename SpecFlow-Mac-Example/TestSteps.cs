@@ -1,5 +1,6 @@
 ﻿using System;
 using Example;
+using FluentAssertions;
 
 using TechTalk.SpecFlow;
 
@@ -55,11 +56,11 @@ namespace SpecFlowMacExample
         }
 
         [Then("the result should be (.*)")]
-        public void ThenTheResultShouldBe(int result)
+        public void ThenTheResultShouldBe(int expectedResult)
         {
             //TODO: implement assert (verification) logic
 
-            _scenarioContext.Pending();
+            result.Should().Be(expectedResult);
         }
     }
 }
