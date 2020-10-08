@@ -22,7 +22,7 @@ namespace Example
 
         public int Subtract()
         {
-            return 4;
+            return FirstNumber - SecondNumber;
         }
     }
 }
