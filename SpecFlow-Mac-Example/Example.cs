@@ -11,5 +11,7 @@ namespace Example
         public Calculator()
         {
         }
+
+        public int FirstNumber { get; set; }
     }
 }
